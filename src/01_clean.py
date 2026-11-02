@@ -1,6 +1,7 @@
 import re
 import pandas as pd
-
+from pathlib import Path
+Path("data/processed").mkdir(parents=True, exist_ok=True)
 RAW = "data/raw/nltuk198020223.xlsx"   # your downloaded file
 OUT = "data/processed/life_tables_long.csv"
 

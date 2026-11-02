@@ -1,6 +1,7 @@
 import sqlite3
 import pandas as pd
-
+from pathlib import Path
+Path("outputs").mkdir(exist_ok=True)
 df = pd.read_csv("data/processed/life_tables_long.csv")
 con = sqlite3.connect("data/processed/life_tables.db")
 df.to_sql("life_tables", con, if_exists="replace", index=False)

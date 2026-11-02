@@ -6,10 +6,19 @@ changed since 1980 and what that means for pension costs.
 ## Key findings
 - Life expectancy at birth rose from 70.8 to 79.1 years for men and from 76.8 to 83.0 for women.
 - At age 65 the gain was 5.8 years for men and 4.3 for women, which means that many more years of pension paid per person.
-- Progress [slowed / stalled] in the 2010s and dipped during the pandemic.
+- Progress stalled in the 2010s and dipped during the pandemic.
 - Adult mortality follows the Gompertz law: risk doubles about every 7.1 years of age for women and every 7.5 for men.
 
 ![Life expectancy trend](outputs/01_life_expectancy_trend.png)
+
+The chart below shows the probability of dying within a year at each age, on a log scale.
+From about age 30 onwards the lines are close to straight, which is the Gompertz law in action:
+risk rises exponentially with age. The gap between the dashed (1980–82) and solid (2022–24)
+lines shows how much mortality has fallen at almost every age, with the largest improvements
+in middle age. Men have higher mortality than women at nearly every age, most visibly in the
+late teens and twenties.
+
+![Mortality curve](outputs/03_mortality_curve.png)
 
 ## Method
 1. `01_clean.py` reshapes the ONS workbook into one tidy table and runs
